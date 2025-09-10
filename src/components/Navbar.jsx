@@ -26,7 +26,7 @@ const Navbar = () => {
                             </li>
                         ))}
                     </ul>
-                    <div className="hidden lg:flex justify-center items-center space-x-12">
+                    <div className="hidden lg:flex justify-center items-center space-x-4">
                         <button className="py-2 px-3 border rounded-md">Sign in</button>
                         <button className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md"> Create an account</button>
                     </div>
@@ -36,7 +36,25 @@ const Navbar = () => {
                         </button>
                     </div>
                 </div>
-                {}
+                {mobileDrawerOpen && (
+                    <div className="fixed right-0 z-20 bg-neutral-900 w-full px-12 pt-8 pb-10 flex flex-col justify-center items-center lg:hidden">
+                        <ul>
+                            {navItems.map((item, index) => (
+                                <li key={index} className="py-4">
+                                    <a href={item.href}>{item.label}</a>
+                                </li>    
+                            ))}
+                        </ul>
+                        <div className="flex space-x-6 py-2">
+                            <a href="#" className="py-2 px-3 border rounded-md">
+                                Sign in
+                            </a>
+                            <a href="#" className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800">
+                                Create an account
+                            </a>
+                        </div>
+                    </div>
+                )}
             </div>
         </nav>
      );
