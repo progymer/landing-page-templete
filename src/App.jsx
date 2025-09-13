@@ -8,6 +8,7 @@ import Testimonail from './components/Testimonail'
 import Footer from './components/Footer'
 
 
+
 const App = () => {
   return (
     <>
@@ -19,6 +20,7 @@ const App = () => {
         <Pricing />
         <Testimonail />
       </div>
+      <Footer />
       
     </>
   )
