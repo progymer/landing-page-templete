@@ -16,10 +16,10 @@ export const Hero = () => {
                 Empower your creativity and bring your VR app odeas to life with our intuitive development tools. Get started today and unlock the full potential of your VR projects.
             </p>
             <div className="flex justify-center mt-10">
-                <a href="#" className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md">
+                <a href="#" className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md hover:scale-105 transition-all duration-300">
                     Get Started
                 </a>
-                <a href="#" className="py-3 px-4 mx-3 rounded-md border">
+                <a href="#" className="py-3 px-4 mx-3 rounded-md border hover:scale-105 transition-all duration-300">
                     Learn More
                 </a>
             </div>
