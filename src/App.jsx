@@ -18,7 +18,6 @@ const App = () => {
         <Workflow />
         <Pricing />
         <Testimonail />
-        <Footer />
       </div>
       
     </>
